@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 90%;
+    overflow-y: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, textarea, select {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.right {
+    background-color: #6c757d;
+    float: right;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.task-section {
+    margin-bottom: 20px;
+}
+
+.task-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-section li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}

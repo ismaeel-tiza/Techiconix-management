@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome</h2>
+        <button onclick="location.href='create_task.html'" class="right">Create Task</button>
+        <button onclick="location.href='create_project.html'" class="right">Create Project</button>
+        <h3>Projects</h3>
+        <ul id="project-list"></ul>
+        <h3>Tasks</h3>
+        <div class="task-section">
+            <h4>New Tasks</h4>
+            <ul id="new-tasks"></ul>
+        </div>
+        <div class="task-section">
+            <h4>In Progress</h4>
+            <ul id="in-progress-tasks"></ul>
+        </div>
+        <div class="task-section">
+            <h4>Completed Tasks</h4>
+            <ul id="completed-tasks"></ul>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
