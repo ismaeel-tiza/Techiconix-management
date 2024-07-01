@@ -57,6 +57,12 @@ document.addEventListener('DOMContentLoaded', function() {
             newTasksList.appendChild(li);
         }
     });
+
+    // Check if redirected after creating a new task and highlight it
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('newTask')) {
+        alert('New task has been created and added to the task list.');
+    }
 });
 
 function updateStatus(taskId, status) {

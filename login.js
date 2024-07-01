@@ -8,8 +8,9 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
 
     if (user) {
         localStorage.setItem('loggedInUser', JSON.stringify(user));
+        alert('Login successful!');
         window.location.href = 'home.html';
     } else {
-        alert('Login failed. Check your credentials.');
+        alert('Invalid email or password');
     }
 });

@@ -6,7 +6,7 @@ document.getElementById('signup-form').addEventListener('submit', function(e) {
     const users = JSON.parse(localStorage.getItem('users')) || [];
     users.push({ email, password });
     localStorage.setItem('users', JSON.stringify(users));
-    
+
     alert('Sign up successful! Please log in.');
     window.location.href = 'login.html';
 });
