@@ -32,6 +32,9 @@ document.getElementById('task-form').addEventListener('submit', function(e) {
     tasks.push({ taskId, details, description, assignee, dueDate, project, attachment: attachment ? attachment.name : '', status: 'In Progress', comments: [] });
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
+    console.log('Task created:', { taskId, details, description, assignee, dueDate, project, attachment: attachment ? attachment.name : '', status: 'In Progress', comments: [] });
+    console.log('All tasks:', tasks);
+
     alert('Task created!');
     window.location.href = 'home.html';
 });
